@@ -233,9 +233,15 @@ The Chamber of Secrets, Prisoner of Azkaban, and Sorcerers Stone are in the data
 
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
-```{r}
 
+```{r}
+movies %>%
+  filter(votes >= 100 & (Comedy == 1 | Animation == 1)) %>%
+  select(title, budget, votes) %>%
+  arrange(desc(budget))
 ```
+
+
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
