@@ -241,7 +241,7 @@ movies %>%
   arrange(desc(budget))
 ```
 
-
+The film "Wild Wild West" had the highest budget for comedies or animations with more than 100 votes.
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
