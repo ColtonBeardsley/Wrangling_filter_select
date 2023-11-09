@@ -229,6 +229,7 @@ movies %>%
   filter(str_detect(title, "Harry Potter"))
 ```
 
+The Chamber of Secrets, Prisoner of Azkaban, and Sorcerers Stone are in the data set. Prisoner of Azkaban had the highest rating and Sorcerers Stone has the most votes.
 
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
