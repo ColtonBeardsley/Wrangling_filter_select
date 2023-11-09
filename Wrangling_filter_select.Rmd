@@ -245,14 +245,18 @@ The film "Wild Wild West" had the highest budget for comedies or animations with
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
-```{r}
 
+```{r}
+movies %>%
+  filter(str_detect(title, "Star Wars") | str_detect(title, "Lord of the Rings")) %>%
+  select(title,year,rating) %>%
+  arrange(desc(rating))
 ```
 
+Yes, Star Wars: Episode VI is listed, and is my favorite film.
 
 
-
-
+We could ask questions using the "or" function and arrange by rating. From this point we could demonstrate that a different series, such as the Lord of the Rings, has an overall higher rating than the star wars movies that are listed.
 
 
 
